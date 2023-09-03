@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SociLink | Login or Register</title>
+    <meta
+      name="description"
+      content="Welcome to SociLink! Your gateway to meaningful connections and engaging conversations. 
+      Log in or register today to join our growing community." />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="/js/index.js"></script>
+  </head>
+  <body>
+    <div id="login">
+      <div class="space">
+        <div class="container-xxl">
+          <div class="row">
+            <!-- Left content-->
+            <div class="left col-12 col-lg-6">
+              <div class="hero-bg d-lg-none"></div>
+              <img
+                src="/resources/images/hero.jpg"
+                alt="two young adults enjoying social media together"
+                class="img-fluid hero-img d-none d-lg-block h-100" />
+            </div>
+            <!-- Right content-->
+            <div
+              class="right col-12 col-lg-6 px-5 py-3 pb-5 d-flex flex-column align-items-center">
+              <img
+                src="/resources/images/hero_text_black.png"
+                alt="unite, share, socilink"
+                class="img-fluid hero-slogan mb-4" />
+              <p class="mb-5 text-center profile-intro text-lg-start">
+                Welcome to SociLink! Join, connect, and thrive with us. Start
+                your journey of meaningful connections today. 🤝
+              </p>
+
+              <form
+                action="/profile"
+                class="needs-validation form-control d-flex flex-column gap-3 p-4 px-sm-5 pt-0"
+                novalidate>
+                <div class="form-floating mt-5">
+                  <input
+                    type="email"
+                    id="login-email"
+                    class="form-control pt-5 pb-4 bg-light"
+                    placeholder="Email"
+                    required
+                    pattern="[^\s@]+@[^\s@]+\.[^\s@]+"
+                    onblur="validate('email_field')" />
+                  <label for="login-email">Email</label>
+                  <div class="invalid-feedback">
+                    Please enter a valid email address.
+                  </div>
+                </div>
+
+                <div class="form-floating">
+                  <input
+                    type="password"
+                    id="login-password"
+                    class="form-control pt-5 pb-4 bg-light"
+                    placeholder="Password"
+                    required
+                    minlength="8"
+                    onblur="validate('password_field')" />
+                  <label for="login-password">Password</label>
+                  <div class="invalid-feedback">
+                    Please enter a password with at least 8 characters.
+                  </div>
+                </div>
+
+                <div class="form-floating">
+                  <input
+                    type="submit"
+                    value="Log in"
+                    class="btn bg-primary rounded text-light form-control py-3 mt-3"
+                    id="login-btn" />
+                </div>
+
+                <small class="text-end"
+                  >No account yet?
+                  <a href="#" class="ms-2 text-primary">Register</a></small
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="p-5 pb-4 bg-primary">
+      <p class="mt-4 text-light text-center">
+        © SociLink 2023. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

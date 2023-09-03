@@ -1,0 +1,18 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+// Overwriting theme colors and creating new ones
+
+$theme-colors: map-merge(
+  (
+    "primary": $cyan-600,
+    "light": $gray-100,
+  ),
+  (
+    "light-cyan": $cyan-100,
+    "light-gray": $gray-200,
+    "white": $white,
+  )
+);
+
+@import "~bootstrap/scss/bootstrap";

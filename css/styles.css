@@ -113,10 +113,3 @@ form,
   top: 0;
   width: 34%;
 }
-
-/* MEDIA QUERIES */
-@media screen and (min-width: 992px) {
-  .space {
-    padding: 5%;
-  }
-}

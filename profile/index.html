@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile | SociLink</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script
+      defer
+      src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="profile.js"></script>
+  </head>
+  <body id="profile">
+    <header class="bg-primary p-4 d-flex justify-content-between">
+      <a href="/feed/index.html">
+        <img
+          src="/resources/icons/book-open.svg"
+          alt="view feed page"
+          class="icon"
+      /></a>
+
+      <div class="d-flex gap-3">
+        <a href="/profile/index.html">
+          <img src="/resources/icons/user.svg" alt="view profile" class="icon"
+        /></a>
+        <a href="/index.html"
+          ><img src="/resources/icons/log-out.svg" alt="sign out" class="icon"
+        /></a>
+      </div>
+    </header>
+
+    <section id="profileInfo">
+      <div class="container-xxl">
+        <div class="row bg-dark p-4">
+          <div class="gap-4 d-flex align-items-center">
+            <img
+              src="/resources/icons/user.svg"
+              alt="profile image"
+              class="profileImg img-fluid" />
+            <div>
+              <p id="addUsername" class="fw-bold text-light mb-1"></p>
+              <p class="small text-success m-0 fst-italic">Online now</p>
+            </div>
+          </div>
+          <button
+            class="btn-info btn fw-bold text-light p-2 w-75 shadow text-uppercase ls-widest d-block mx-auto mt-4">
+            Follow
+          </button>
+          <div
+            class="row p-4 py-5 bg-secondary rounded border border-white mx-auto mt-5">
+            <p class="text-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ad
+              delectus non quod dolorem soluta libero nemo enim. Voluptatem
+              provident architecto obcaecati, aspernatur eos iure expedita,
+              molestiae cupiditate vero eum earum tempore tempora ullam alias
+              excepturi facere hic, nihil natus quaerat explicabo minima? Optio
+              quae harum iste ab. Aliquam error ipsa beatae.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="followers">
+      <div class="container-xxl p-0">
+        <div class="dropdown w-100">
+          <button
+            id="toggleFollowers"
+            class="btn btn-secondary w-100 rounded-0 fw-bold text-uppercase p-4"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Followers
+          </button>
+          <ul
+            id="followersDropdown"
+            class="dropdown-menu w-100 rounded-0 bg-secondary d-flex flex-wrap p-4 justify-content-center d-none"
+            aria-labelledby="dropdownMenuButton">
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="/resources/icons/user.svg"
+                  alt="Follower 1"
+                  class="rounded-circle m-1"
+                  style="width: 30px; height: 30px" />
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="/resources/icons/user.svg"
+                  alt="Follower 2"
+                  class="rounded-circle m-1"
+                  style="width: 30px; height: 30px" />
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="/resources/icons/user.svg"
+                  alt="Follower 3"
+                  class="rounded-circle m-1"
+                  style="width: 30px; height: 30px" />
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="/resources/icons/user.svg"
+                  alt="Follower 4"
+                  class="rounded-circle m-1"
+                  style="width: 30px; height: 30px" />
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="/resources/icons/user.svg"
+                  alt="Follower 5"
+                  class="rounded-circle m-1"
+                  style="width: 30px; height: 30px" />
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="/resources/icons/user.svg"
+                  alt="Follower 6"
+                  class="rounded-circle m-1"
+                  style="width: 30px; height: 30px" />
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="/resources/icons/user.svg"
+                  alt="Follower 7"
+                  class="rounded-circle m-1"
+                  style="width: 30px; height: 30px" />
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="/resources/icons/user.svg"
+                  alt="Follower 8"
+                  class="rounded-circle m-1"
+                  style="width: 30px; height: 30px" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="following">
+      <div class="container-xxl p-0">
+        <div class="dropdown w-100">
+          <button
+            id="toggleFollowings"
+            class="btn btn-secondary w-100 rounded-0 fw-bold text-uppercase p-4"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Followers
+          </button>
+          <ul
+            id="followingsDropdown"
+            class="dropdown-menu w-100 rounded-0 bg-secondary d-flex flex-wrap p-4 justify-content-center d-none"
+            aria-labelledby="dropdownMenuButton">
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="/resources/icons/user.svg"
+                  alt="Following 1"
+                  class="rounded-circle m-1"
+                  style="width: 30px; height: 30px" />
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="/resources/icons/user.svg"
+                  alt="Following 2"
+                  class="rounded-circle m-1"
+                  style="width: 30px; height: 30px" />
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="/resources/icons/user.svg"
+                  alt="Following 3"
+                  class="rounded-circle m-1"
+                  style="width: 30px; height: 30px" />
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="/resources/icons/user.svg"
+                  alt="Following 4"
+                  class="rounded-circle m-1"
+                  style="width: 30px; height: 30px" />
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="/resources/icons/user.svg"
+                  alt="Following 5"
+                  class="rounded-circle m-1"
+                  style="width: 30px; height: 30px" />
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="/resources/icons/user.svg"
+                  alt="Following 6"
+                  class="rounded-circle m-1"
+                  style="width: 30px; height: 30px" />
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="/resources/icons/user.svg"
+                  alt="Following 7"
+                  class="rounded-circle m-1"
+                  style="width: 30px; height: 30px" />
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><img
+                  src="/resources/icons/user.svg"
+                  alt="Following 8"
+                  class="rounded-circle m-1"
+                  style="width: 30px; height: 30px" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-info p-4 py-5 p-md-5">
+      <img
+        src="/resources/images/logo_tmb.png"
+        alt="logo"
+        class="logo d-block mx-auto" />
+      <p class="text-center text-light mt-4 small">
+        © 2023. SociLink. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

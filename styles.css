@@ -2,16 +2,6 @@
   width: 3rem;
 }
 
-/*@font-face {
-  font-family: "Roboto-reg";
-  src: url(/resources/fonts/Roboto-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Roboto-bold";
-  src: url(/resources/fonts/Roboto-Bold.ttf);
-}*/
-
 body {
   font-family: "Roboto", sans-serif;
 }

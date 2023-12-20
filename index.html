@@ -14,6 +14,7 @@
     <script
       defer
       src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="index.js"></script>
   </head>
   <body id="index">
     <header></header>
@@ -44,15 +45,44 @@
               dolorem magni doloremque minus cumque.
             </p>
           </div>
-          <form
-            action="/profile/index.html"
+          <div
+            id="initialBtns"
             class="d-flex flex-column align-items-center gap-4 mb-md-0">
-            <button class="btn-info btn fw-bold text-light p-3 w-75 shadow">
+            <button
+              id="openLoginForm"
+              class="btn-info btn fw-bold text-light p-3 w-75 shadow text-uppercase ls-widest">
               Login
             </button>
             <button
-              class="btn-info btn fw-bold text-light p-3 w-75 mb-4 shadow">
+              class="btn-secondary btn fw-bold text-light p-3 w-75 mb-4 shadow text-uppercase ls-widest disabled">
               Register
+            </button>
+          </div>
+          <!-- LOGIN FORM -->
+          <form id="loginForm" action="/profile/index.html" class="d-none">
+            <div class="form-floating mb-4 w-75 mx-auto">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInputUsername"
+                placeholder="Username"
+                required />
+              <label for="floatingInputUsername">Username</label>
+            </div>
+            <div class="form-floating w-75 mx-auto">
+              <input
+                type="password"
+                class="form-control"
+                id="floatingPassword"
+                placeholder="Password"
+                required
+                minlength="8" />
+              <label for="floatingPassword">Password</label>
+            </div>
+            <button
+              type="submit"
+              class="btn-info btn fw-bold text-light p-3 w-75 shadow text-uppercase ls-widest d-block mx-auto mt-5">
+              Login
             </button>
           </form>
         </div>

@@ -44,7 +44,7 @@
               alt="profile image"
               class="profileImg img-fluid" />
             <div>
-              <p id="addUsername" class="fw-bold text-light mb-1"></p>
+              <p class="fw-bold text-light mb-1 addUsername"></p>
               <p class="small text-success m-0 fst-italic">Online now</p>
             </div>
           </div>
@@ -249,6 +249,178 @@
           </ul>
         </div>
       </div>
+    </section>
+    <section id="userPosts" class="bg-dark container-xxl p-0">
+      <!-- Bootstrap Carousel Start -->
+      <div id="postCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="d-flex gap-4 p-5 pb-4">
+                <img
+                  src="/resources/icons/user.svg"
+                  alt="user profile image"
+                  class="icon" />
+                <div>
+                  <p class="fw-bold addUsername mb-1 text-light"></p>
+                  <p class="m-0 text-light small fst-italic">10 minutes ago</p>
+                </div>
+              </div>
+              <p class="text-light p-5 pt-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti nobis, et dolorum repellendus animi ipsum accusamus
+                nesciunt aliquam voluptatem eligendi a ea saepe. Nam ad vero
+                iste harum optio ea consequuntur, sunt adipisci quo excepturi
+                dicta autem quibusdam officia enim, accusamus dolores error
+                saepe eaque expedita?
+              </p>
+              <div class="d-flex justify-content-around bg-secondary w-100 p-3">
+                <a href="#"
+                  ><img
+                    src="/resources/icons/message-square.svg"
+                    alt="comment post"
+                    class="icon"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="/resources/icons/thumbs-up.svg"
+                    alt="like post"
+                    class="icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="d-flex gap-4 p-5 pb-4">
+                <img
+                  src="/resources/icons/user.svg"
+                  alt="user profile image"
+                  class="icon" />
+                <div>
+                  <p class="fw-bold addUsername mb-1 text-light"></p>
+                  <p class="m-0 text-light small fst-italic">40 minutes ago</p>
+                </div>
+              </div>
+              <img
+                src="/resources/images/hiking-img.jpg"
+                alt="hiking image"
+                class="img-fluid px-5 pt-2 pb-3" />
+              <p class="text-light p-5 pt-0">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                corporis saepe eaque?
+              </p>
+              <div class="d-flex justify-content-around bg-secondary w-100 p-3">
+                <a href="#"
+                  ><img
+                    src="/resources/icons/message-square.svg"
+                    alt="comment post"
+                    class="icon"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="/resources/icons/thumbs-up.svg"
+                    alt="like post"
+                    class="icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="d-flex gap-4 p-5 pb-4">
+                <img
+                  src="/resources/icons/user.svg"
+                  alt="user profile image"
+                  class="icon" />
+                <div>
+                  <p class="fw-bold addUsername mb-1 text-light"></p>
+                  <p class="m-0 text-light small fst-italic">2 days ago</p>
+                </div>
+              </div>
+              <img
+                src="/resources/images/carousel.jpg"
+                alt="carousel image"
+                class="img-fluid px-5 pt-2 pb-3" />
+              <p class="text-light p-5 pt-0">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et,
+                fugit animi facilis deleniti laboriosam, repudiandae quae
+                maiores doloremque incidunt cumque, modi cupiditate.
+              </p>
+              <div class="d-flex justify-content-around bg-secondary w-100 p-3">
+                <a href="#"
+                  ><img
+                    src="/resources/icons/message-square.svg"
+                    alt="comment post"
+                    class="icon"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="/resources/icons/thumbs-up.svg"
+                    alt="like post"
+                    class="icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="d-flex gap-4 p-5 pb-4">
+                <img
+                  src="/resources/icons/user.svg"
+                  alt="user profile image"
+                  class="icon" />
+                <div>
+                  <p class="fw-bold addUsername mb-1 text-light"></p>
+                  <p class="m-0 text-light small fst-italic">5 days ago</p>
+                </div>
+              </div>
+              <p class="text-light p-5 pt-0">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
+                incidunt, necessitatibus laudantium aliquid dolore ad, saepe
+                iure quaerat vero ullam cum unde voluptatem similique, iusto ea
+                corporis praesentium eum quis debitis placeat dicta. Sed aliquid
+                quis quisquam quidem. Hic excepturi at delectus voluptatem vero.
+              </p>
+              <div class="d-flex justify-content-around bg-secondary w-100 p-3">
+                <a href="#"
+                  ><img
+                    src="/resources/icons/message-square.svg"
+                    alt="comment post"
+                    class="icon"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="/resources/icons/thumbs-up.svg"
+                    alt="like post"
+                    class="icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Controls Start -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#postCarousel"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#postCarousel"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Bootstrap Carousel End -->
     </section>
 
     <footer class="bg-info p-4 py-5 p-md-5">

@@ -14,9 +14,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* INDEX PAGE */
+
 #index {
   background-image: url(/resources/bg/socilink-bg-dark.png);
   background-size: cover;
   background-position: 70%;
   background-repeat: no-repeat;
 }
+
+/* PROFILE PAGE */

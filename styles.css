@@ -2,6 +2,14 @@
   width: 3rem;
 }
 
+.icon {
+  width: 2rem;
+}
+
+.profileImg {
+  width: 5rem;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }

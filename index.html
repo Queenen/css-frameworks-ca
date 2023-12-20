@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | SociLink</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script
+      defer
+      src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body id="index">
+    <header></header>
+
+    <div class="container-xxl">
+      <div class="row p-md-5 d-flex align-items-stretch">
+        <div class="left col-md-6 p-0 d-flex">
+          <img
+            src="/resources/images/hero_cropped.png"
+            alt="image"
+            class="img-fluid d-md-none" />
+          <img
+            src="/resources/images/hero.jpg"
+            alt="image"
+            class="img-fluid d-none d-md-block object-fit-cover" />
+        </div>
+
+        <div
+          class="right col-md-6 d-flex flex-column justify-content-center py-5 py-md-0 mb-5">
+          <div>
+            <img
+              src="/resources/images/hero_text.png"
+              alt="slogan"
+              class="img-fluid p-4 p-md-0 w-75 d-block mx-auto mt-5" />
+            <p class="text-light p-4 p-lg-5 text-center">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+              quia asperiores vitae voluptatum aperiam vel in nisi commodi sit
+              dolorem magni doloremque minus cumque.
+            </p>
+          </div>
+          <form
+            action="/profile/index.html"
+            class="d-flex flex-column align-items-center gap-4 mb-md-0">
+            <button class="btn-info btn fw-bold text-light p-3 w-75 shadow">
+              Login
+            </button>
+            <button
+              class="btn-info btn fw-bold text-light p-3 w-75 mb-4 shadow">
+              Register
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-info p-4 py-5 p-md-5">
+      <img
+        src="/resources/images/logo_tmb.png"
+        alt="logo"
+        class="logo d-block mx-auto" />
+      <p class="text-center text-light mt-4 small">
+        © 2023. SociLink. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

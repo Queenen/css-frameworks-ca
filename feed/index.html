@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feed | SociLink</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script
+      defer
+      src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="profile.js"></script>
+  </head>
+  <body id="feed">
+    <header class="bg-primary p-4 d-flex justify-content-between">
+      <a href="/feed/index.html">
+        <img
+          src="/resources/icons/book-open.svg"
+          alt="view feed page"
+          class="icon"
+      /></a>
+
+      <div class="d-flex gap-3">
+        <button
+          class="btn m-0 p-0"
+          id="addPost"
+          data-bs-toggle="modal"
+          data-bs-target="#postModal">
+          <img
+            src="/resources/icons/plus-circle.svg"
+            alt="add post"
+            class="icon" />
+        </button>
+        <a href="/profile/index.html">
+          <img src="/resources/icons/user.svg" alt="view profile" class="icon"
+        /></a>
+        <a href="/index.html"
+          ><img src="/resources/icons/log-out.svg" alt="sign out" class="icon"
+        /></a>
+      </div>
+    </header>
+    <div class="container-xxl p-0">
+      <div class="row d-flex">
+        <div class="left col-md-6 col-lg-4 p-0 bg-primary">
+          <nav class="bg-primary">
+            <div class="container-fluid p-0">
+              <form class="d-flex flex-md-column">
+                <div class="p-4 px-5 d-flex w-100">
+                  <input
+                    class="form-control me-3 me-md-0 mb-md-3"
+                    type="search"
+                    placeholder="Search..."
+                    aria-label="Search" />
+                  <button class="btn p-0" type="button" id="filterButton">
+                    <img
+                      src="/resources/icons/filter.svg"
+                      alt="filter results"
+                      class="icon d-md-none" />
+                  </button>
+                </div>
+                <div class="d-none d-md-block">
+                  <button
+                    class="btn d-flex align-items-center p-0 border-0 w-100 px-5 py-4 bg-info rounded-0">
+                    <img
+                      src="/resources/icons/clipboard.svg"
+                      alt="view posts"
+                      class="icon me-5" />
+                    <p class="fw-bold lead text-uppercase m-0 text-light">
+                      Posts
+                    </p>
+                  </button>
+                  <button
+                    class="btn d-flex align-items-center p-0 border-0 w-100 px-5 py-4 rounded-0">
+                    <img
+                      src="/resources/icons/image.svg"
+                      alt="view images"
+                      class="icon me-5" />
+                    <p class="fw-bold lead text-uppercase m-0 text-light">
+                      Images
+                    </p>
+                  </button>
+                  <button
+                    class="btn d-flex align-items-center p-0 border-0 w-100 px-5 py-4 bg-info rounded-0">
+                    <img
+                      src="/resources/icons/youtube.svg"
+                      alt="view videos"
+                      class="icon me-5" />
+                    <p class="fw-bold lead text-uppercase m-0 text-light">
+                      Videos
+                    </p>
+                  </button>
+                  <button
+                    class="btn d-flex align-items-center p-0 border-0 w-100 px-5 py-4 rounded-0 disabled">
+                    <img
+                      src="/resources/icons/bar-chart-2.svg"
+                      alt="view polls"
+                      class="icon me-5" />
+                    <p class="fw-bold lead text-uppercase m-0 text-light">
+                      Polls
+                    </p>
+                  </button>
+                  <button
+                    class="btn d-flex align-items-center p-0 border-0 w-100 px-5 py-4 bg-info rounded-0">
+                    <img
+                      src="/resources/icons/thumbs-up.svg"
+                      alt="view liked posts"
+                      class="icon me-5" />
+                    <p class="fw-bold lead text-uppercase m-0 text-light">
+                      Liked Posts
+                    </p>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </nav>
+        </div>
+        <div
+          class="right col-md-6 col-lg-8 posts bg-dark p-5 d-flex flex-column gap-5 align-items-center overflow-auto vh-100">
+          <div
+            class="post text-light rounded border border-white col-sm-8 col-md-12 col-lg-10">
+            <div class="d-flex align-items-center p-4 p-md-5">
+              <img
+                src="/resources/icons/user.svg"
+                alt="profile image"
+                class="me-3 logo" />
+              <div>
+                <p class="fw-bold mb-1">Username</p>
+                <p class="fst-italic small mb-0">10 minutes ago</p>
+              </div>
+            </div>
+            <p class="pb-3 px-4 px-md-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              nobis, et dolorum repellendus animi ipsum accusamus nesciunt
+              aliquam voluptatem eligendi a ea saepe. Nam ad vero iste harum
+              optio ea consequuntur, sunt adipisci quo excepturi dicta autem
+              quibusdam officia enim, accusamus dolores error saepe eaque
+              expedita?
+            </p>
+            <div
+              class="bg-primary py-2 py-md-3 px-4 px-md-5 d-flex justify-content-around rounded-bottom">
+              <button class="btn p-0 border-0">
+                <img
+                  src="/resources/icons/message-square.svg"
+                  alt="comment post"
+                  class="icon" />
+              </button>
+              <button class="btn p-0 border-0">
+                <img
+                  src="/resources/icons/thumbs-up.svg"
+                  alt="like post"
+                  class="icon" />
+              </button>
+            </div>
+          </div>
+          <div
+            class="post text-light rounded border border-white col-sm-8 col-md-12 col-lg-10">
+            <div class="d-flex align-items-center p-4 p-md-5">
+              <img
+                src="/resources/icons/user.svg"
+                alt="profile image"
+                class="me-3 logo" />
+              <div>
+                <p class="fw-bold mb-1">Username</p>
+                <p class="fst-italic small mb-0">40 minutes ago</p>
+              </div>
+            </div>
+            <img
+              src="/resources/images/hiking-img.jpg"
+              alt="hiking with dog"
+              class="img-fluid mb-3 px-4 px-md-5" />
+            <p class="pb-3 px-4 px-md-5">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+              corporis saepe eaque?
+            </p>
+            <div
+              class="bg-primary py-2 py-md-3 px-4 px-md-5 d-flex justify-content-around rounded-bottom">
+              <button class="btn p-0 border-0">
+                <img
+                  src="/resources/icons/message-square.svg"
+                  alt="comment post"
+                  class="icon" />
+              </button>
+              <button class="btn p-0 border-0">
+                <img
+                  src="/resources/icons/thumbs-up.svg"
+                  alt="like post"
+                  class="icon" />
+              </button>
+            </div>
+          </div>
+          <div
+            class="post text-light rounded border border-white col-sm-8 col-md-12 col-lg-10">
+            <div class="d-flex align-items-center p-4 p-md-5">
+              <img
+                src="/resources/icons/user.svg"
+                alt="profile image"
+                class="me-3 logo" />
+              <div>
+                <p class="fw-bold mb-1">Username</p>
+                <p class="fst-italic small mb-0">2 days ago</p>
+              </div>
+            </div>
+            <img
+              src="/resources/images/carousel.jpg"
+              alt="carousel ride"
+              class="img-fluid mb-3 px-4 px-md-5" />
+            <p class="pb-3 px-4 px-md-5">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et,
+              fugit animi facilis deleniti laboriosam, repudiandae quae maiores
+              doloremque incidunt cumque, modi cupiditate.
+            </p>
+            <div
+              class="bg-primary py-2 py-md-3 px-4 px-md-5 d-flex justify-content-around rounded-bottom">
+              <button class="btn p-0 border-0">
+                <img
+                  src="/resources/icons/message-square.svg"
+                  alt="comment post"
+                  class="icon" />
+              </button>
+              <button class="btn p-0 border-0">
+                <img
+                  src="/resources/icons/thumbs-up.svg"
+                  alt="like post"
+                  class="icon" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-info p-4 py-5 p-md-5">
+      <img
+        src="/resources/images/logo_tmb.png"
+        alt="logo"
+        class="logo d-block mx-auto" />
+      <p class="text-center text-light mt-4 small">
+        © 2023. SociLink. All rights reserved.
+      </p>
+    </footer>
+    <!-- Add Post Modal -->
+    <div
+      class="modal fade"
+      id="postModal"
+      tabindex="-1"
+      aria-labelledby="postModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-light">
+            <h5 class="modal-title" id="postModalLabel">New Post</h5>
+            <button
+              type="button"
+              class="btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-dark">
+            <!-- Textarea for post content -->
+            <div class="mb-3">
+              <label for="postContent" class="form-label text-light"
+                >Post Content</label
+              >
+              <textarea
+                class="form-control"
+                id="postContent"
+                rows="3"></textarea>
+            </div>
+            <!-- URL input for image (optional) -->
+            <div class="mb-3">
+              <label for="imageUrl" class="form-label text-light"
+                >Image URL (optional)</label
+              >
+              <input
+                type="url"
+                class="form-control"
+                id="imageUrl"
+                placeholder="https://example.com/image.jpg" />
+            </div>
+          </div>
+          <div class="modal-footer bg-dark">
+            <!-- Add Post Button -->
+            <button type="button" class="btn btn-info text-light">
+              Add Post
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

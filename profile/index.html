@@ -10,7 +10,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap"
       rel="stylesheet" />
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="../src/scss/styles.css" />
     <script
       defer
       src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -55,7 +55,7 @@
                   Follow
                 </button>
                 <div
-                  class="row p-4 py-5 bg-secondary rounded border border-white mx-auto mt-5">
+                  class="row p-4 py-5 bg-warning rounded border border-white mx-auto mt-5">
                   <p class="text-light">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
                     ad delectus non quod dolorem soluta libero nemo enim.
@@ -76,7 +76,7 @@
               <div class="dropdown w-100">
                 <button
                   id="toggleFollowers"
-                  class="btn btn-secondary w-100 rounded-0 fw-bold text-uppercase p-4"
+                  class="btn btn-danger w-100 rounded-0 fw-bold text-uppercase p-4"
                   type="button"
                   id="dropdownMenuButton"
                   data-bs-toggle="dropdown"
@@ -85,7 +85,7 @@
                 </button>
                 <ul
                   id="followersDropdown"
-                  class="dropdown-menu w-100 rounded-0 bg-secondary d-flex flex-wrap p-4 justify-content-center d-none"
+                  class="dropdown-menu w-100 rounded-0 bg-danger d-flex flex-wrap p-4 justify-content-center d-none"
                   aria-labelledby="dropdownMenuButton">
                   <li>
                     <a class="dropdown-item" href="#"
@@ -168,7 +168,7 @@
               <div class="dropdown w-100">
                 <button
                   id="toggleFollowings"
-                  class="btn btn-secondary w-100 rounded-0 fw-bold text-uppercase p-4"
+                  class="btn btn-danger w-100 rounded-0 fw-bold text-uppercase p-4"
                   type="button"
                   id="dropdownMenuButton"
                   data-bs-toggle="dropdown"
@@ -177,7 +177,7 @@
                 </button>
                 <ul
                   id="followingsDropdown"
-                  class="dropdown-menu w-100 rounded-0 bg-secondary d-flex flex-wrap p-4 justify-content-center d-none"
+                  class="dropdown-menu w-100 rounded-0 bg-danger d-flex flex-wrap p-4 justify-content-center d-none"
                   aria-labelledby="dropdownMenuButton">
                   <li>
                     <a class="dropdown-item" href="#"
@@ -264,7 +264,7 @@
               class="carousel slide"
               data-bs-ride="carousel">
               <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active bg-warning">
                   <div class="row">
                     <div class="d-flex gap-4 p-5 pb-4">
                       <img
@@ -287,7 +287,7 @@
                       accusamus dolores error saepe eaque expedita?
                     </p>
                     <div
-                      class="d-flex justify-content-around bg-secondary w-100 p-3">
+                      class="d-flex justify-content-around bg-info w-100 p-3">
                       <a href="#"
                         ><img
                           src="/resources/icons/message-square.svg"
@@ -303,7 +303,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item bg-warning">
                   <div class="row">
                     <div class="d-flex gap-4 p-5 pb-4">
                       <img
@@ -326,7 +326,7 @@
                       Omnis corporis saepe eaque?
                     </p>
                     <div
-                      class="d-flex justify-content-around bg-secondary w-100 p-3">
+                      class="d-flex justify-content-around bg-info w-100 p-3">
                       <a href="#"
                         ><img
                           src="/resources/icons/message-square.svg"
@@ -343,7 +343,7 @@
                   </div>
                 </div>
 
-                <div class="carousel-item">
+                <div class="carousel-item bg-warning">
                   <div class="row">
                     <div class="d-flex gap-4 p-5 pb-4">
                       <img
@@ -367,47 +367,7 @@
                       quae maiores doloremque incidunt cumque, modi cupiditate.
                     </p>
                     <div
-                      class="d-flex justify-content-around bg-secondary w-100 p-3">
-                      <a href="#"
-                        ><img
-                          src="/resources/icons/message-square.svg"
-                          alt="comment post"
-                          class="icon"
-                      /></a>
-                      <a href="#"
-                        ><img
-                          src="/resources/icons/thumbs-up.svg"
-                          alt="like post"
-                          class="icon"
-                      /></a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="d-flex gap-4 p-5 pb-4">
-                      <img
-                        src="/resources/icons/user.svg"
-                        alt="user profile image"
-                        class="icon" />
-                      <div>
-                        <p class="fw-bold addUsername mb-1 text-light"></p>
-                        <p class="m-0 text-light small fst-italic">
-                          5 days ago
-                        </p>
-                      </div>
-                    </div>
-                    <p class="text-light p-5 pt-0">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Sit incidunt, necessitatibus laudantium aliquid dolore ad,
-                      saepe iure quaerat vero ullam cum unde voluptatem
-                      similique, iusto ea corporis praesentium eum quis debitis
-                      placeat dicta. Sed aliquid quis quisquam quidem. Hic
-                      excepturi at delectus voluptatem vero.
-                    </p>
-                    <div
-                      class="d-flex justify-content-around bg-secondary w-100 p-3">
+                      class="d-flex justify-content-around bg-info w-100 p-3">
                       <a href="#"
                         ><img
                           src="/resources/icons/message-square.svg"
@@ -453,7 +413,7 @@
       </div>
     </div>
 
-    <footer class="bg-info p-4 py-5 p-md-5">
+    <footer class="bg-primary p-4 py-5 p-md-5">
       <img
         src="/resources/images/logo_tmb.png"
         alt="logo"

@@ -1,3 +1,16 @@
+//Overrides
+
+$theme-colors: (
+  "primary": #1a3234,
+  "danger": #034c4c,
+  "warning": #293134,
+  "info": #009191,
+  "dark": #242424,
+  "success": #1ed98b,
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
 .logo {
   width: 3rem;
 }

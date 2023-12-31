@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | SociLink</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./src/scss/styles.css" />
+    <script
+      defer
+      src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="index.js"></script>
+  </head>
+  <body id="index">
+    <header></header>
+
+    <div class="container-xxl">
+      <div class="row p-md-5 d-flex align-items-stretch">
+        <div class="left col-md-6 p-0 d-flex">
+          <img
+            src="/resources/images/hero_cropped.png"
+            alt="image"
+            class="img-fluid d-md-none" />
+          <img
+            src="/resources/images/hero.jpg"
+            alt="image"
+            class="img-fluid d-none d-md-block object-fit-cover" />
+        </div>
+
+        <div
+          class="right col-md-6 d-flex flex-column justify-content-center pt-4 py-md-0 mb-5">
+          <div>
+            <img
+              src="/resources/images/hero_text.png"
+              alt="slogan"
+              class="img-fluid p-4 p-md-0 w-75 d-block mx-auto" />
+            <p class="text-light p-4 p-lg-5 text-center">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+              quia asperiores vitae voluptatum aperiam vel in nisi commodi sit
+              dolorem magni doloremque minus cumque.
+            </p>
+          </div>
+          <div
+            id="initialBtns"
+            class="d-flex flex-column align-items-center gap-4 mb-md-0">
+            <button
+              id="openLoginForm"
+              class="btn-info btn fw-bold text-light p-3 w-75 shadow text-uppercase ls-widest">
+              Login
+            </button>
+            <button
+              class="btn-secondary btn fw-bold text-light p-3 w-75 mb-4 shadow text-uppercase ls-widest disabled">
+              Register
+            </button>
+          </div>
+          <!-- LOGIN FORM -->
+          <form id="loginForm" action="/profile/index.html" class="d-none">
+            <div class="form-floating mb-4 w-75 mx-auto">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInputUsername"
+                placeholder="Username"
+                required />
+              <label for="floatingInputUsername">Username</label>
+            </div>
+            <div class="form-floating w-75 mx-auto">
+              <input
+                type="password"
+                class="form-control"
+                id="floatingPassword"
+                placeholder="Password"
+                required
+                minlength="8" />
+              <label for="floatingPassword">Password</label>
+            </div>
+            <button
+              type="submit"
+              class="btn-info btn fw-bold text-light p-3 w-75 shadow text-uppercase ls-widest d-block mx-auto mt-5">
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-primary p-4 py-5 p-md-5">
+      <img
+        src="/resources/images/logo_tmb.png"
+        alt="logo"
+        class="logo d-block mx-auto" />
+      <a
+        href="/about/index.html"
+        class="text-decoration-none text-light d-flex justify-content-center mt-4"
+        >About us</a
+      >
+      <p class="text-center text-light mt-4 small">
+        © 2023. SociLink. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

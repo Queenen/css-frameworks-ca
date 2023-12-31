@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | SociLink</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&family=Rock+Salt&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="../src/scss/styles.css" />
+    <script
+      defer
+      src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body id="about">
+    <header>
+      <nav class="navbar bg-primary p-4 d-flex justify-content-between">
+        <a href="/feed/index.html">
+          <img
+            src="/resources/icons/book-open.svg"
+            alt="view feed page"
+            class="icon"
+        /></a>
+
+        <div class="d-flex gap-3">
+          <a href="/profile/index.html">
+            <img
+              src="/resources/icons/user.svg"
+              alt="view profile"
+              class="icon"
+          /></a>
+          <a href="/index.html"
+            ><img
+              src="/resources/icons/log-out.svg"
+              alt="sign out"
+              class="icon"
+          /></a>
+        </div>
+      </nav>
+    </header>
+    <div class="container-xxl">
+      <div class="row d-flex flex-column flex-md-row">
+        <div class="left p-0 col-md-6">
+          <div class="position-relative imgCrop">
+            <img
+              src="/resources/images/medium-shot-business-team.jpg"
+              alt="socilink crew"
+              class="img-fluid imgCrop p-md-5 bg-dark" />
+            <div
+              class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50 imgCrop"></div>
+            <div
+              class="position-absolute bottom-0 start-50 mb-1 mb-md-2 translate-middle">
+              <p class="text-white fs-1 rockSalt text-nowrap">Who are we?</p>
+            </div>
+          </div>
+
+          <div class="p-5 pt-md-2 text-light bg-dark">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem id
+              quam tenetur consequatur enim similique dolorem. Sit aliquam ipsam
+              temporibus rem voluptate nam impedit eligendi ad iste molestias
+              facere maiores fugit, est modi ab, neque deserunt praesentium,
+              incidunt pariatur! Quo aut ipsam eum laborum.
+            </p>
+          </div>
+        </div>
+        <div class="right p-0 col-md-6 d-flex flex-column">
+          <div
+            class="p-5 pt-0 pt-md-5 text-light bg-dark d-flex align-items-center flex-grow-1 pb-md-0">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              aperiam possimus, ipsam totam dolorum vero quisquam non itaque
+              cupiditate rerum optio similique, veniam, eaque distinctio
+              praesentium! Libero.
+            </p>
+          </div>
+          <div class="position-relative imgCrop">
+            <img
+              src="/resources/images/friends-park-looking-using-smartphones-millennial-youth-culture-concept.jpg"
+              alt="friends socializing"
+              class="img-fluid imgCrop p-md-5 bg-dark" />
+            <div
+              class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50 imgCrop"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-primary p-4 py-5 p-md-5">
+      <img
+        src="/resources/images/logo_tmb.png"
+        alt="logo"
+        class="logo d-block mx-auto" />
+      <p class="text-center text-light mt-4 small">
+        © 2023. SociLink. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

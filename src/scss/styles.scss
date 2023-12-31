@@ -36,4 +36,18 @@ body {
   background-repeat: no-repeat;
 }
 
-/* PROFILE PAGE */
+/* ABOUT PAGE */
+
+.rockSalt {
+  font-family: "Rock Salt";
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  .imgCrop {
+    height: 20rem;
+    object-fit: cover;
+    width: 100%;
+  }
+}

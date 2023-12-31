@@ -11812,4 +11812,17 @@ body {
   background-repeat: no-repeat;
 }
 
-/* PROFILE PAGE *//*# sourceMappingURL=styles.css.map */
+/* ABOUT PAGE */
+.rockSalt {
+  font-family: "Rock Salt";
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  .imgCrop {
+    height: 20rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -41,6 +41,14 @@ cd css-frameworks-ca
 npm install
 ```
 
+<b>Building the Project</b>
+
+To compile the SCSS files into CSS for production:
+
+```bash
+npm run build
+```
+
 <b>Start the Development Server:</b>
 
 To start the live server which will automatically reload your page on file changes, run:
@@ -49,7 +57,7 @@ To start the live server which will automatically reload your page on file chang
 npm run start
 ```
 
-<b>Compiling SASS</b>
+<b>Watch SASS</b>
 
 To compile SASS files into CSS and watch for changes, run:
 

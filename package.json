@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Unite, Share, SociLink! A social media platform for connecting with old and new relations.",
   "scripts": {
+    "build": "sass src/scss:src/scss",
     "start": "live-server",
-    "sass": "sass --watch scss:css"
+    "sass": "sass --watch src/scss:src/scss"
   },
   "repository": {
     "type": "git",
